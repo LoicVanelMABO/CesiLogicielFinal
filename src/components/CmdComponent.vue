@@ -14,7 +14,7 @@
                             <th>moyen paiement</th>
                             <th>Prix</th>
                             <!-- <th>Etat</th> -->
-                            <th>Actions</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
