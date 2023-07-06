@@ -31,6 +31,9 @@ import 'datatables.net-buttons/js/buttons.print.mjs';
 
 
 
+
+
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
@@ -72,6 +75,21 @@ const app = createApp(App)
 
 
 app.component('font-awesome-icon', FontAwesomeIcon)
+
+//pour le paiement en ligne avec stripe
+// import { StripeCheckout } from '@vue-stripe/vue-stripe';
+
+// const stripePromise = loadStripe('pk_test_51NQ8OQKp680irPickh4GL1EBzKXkJCJyEZ7RMxEVju8N9q96gxImZrtThZJVv8x4CwyZDFwRKYn905MK6jOSKryG004ln2cpg8');
+
+// app.config.globalProperties.$stripe = stripePromise;
+
+//pour les toast notif
+import VueToastify from 'vue-toastify';
+import {toast} from 'vue-toastify';
+app.use(VueToastify);
+
+
+
 
 
 // app.use(axioss)

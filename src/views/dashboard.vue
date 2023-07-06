@@ -5,6 +5,11 @@
     import mms from '../components/menu/mm.vue'
     import rowRestau from '../components/RowRestau.vue'
     import footerF from '../components/menu/footer.vue'
+    import stripeC from '../components/StripeComponent.vue'
+
+    
+    import {toast} from 'vue3-toastify';
+    import 'vue3-toastify/dist/index.css'
     // import { watch } from 'fs/promises'
     export default{
         name:'dashboard',        
@@ -20,6 +25,7 @@
             menus,
             rowRestau,
             footerF,
+            stripeC,
         },
         setup(){
             class Restaus{
@@ -73,7 +79,29 @@
         },
         methods:{      
             AllRestauInRow() {
-            }
+            },
+            showNotification() {
+                // alert('rr');
+                // toast.success('Notification toast !'); // Exemple de notification
+                // toast.success("I'm a toast!", {
+                toast.success('footerF', {
+                    position: "top-center",
+                    timeout: 7975,
+                    closeOnClick: true,
+                    pauseOnFocusLoss: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    draggablePercent: 0.6,
+                    showCloseButtonOnHover: false,
+                    hideProgressBar: true,
+                    closeButton: "button",
+                    icon: true,
+                    rtl: false
+                });
+                // toast('welcome to here',{
+                //     autoClose: 1000,
+                // });
+            },
         }
     }    
 </script>
@@ -87,6 +115,8 @@
     <!-- <span>{{ data_restau }}</span> -->
     <h2 class="title"> Restaurants à proximité</h2>
     <rowRestau v-for = "(data,i) in data_restau" :key="i" :three_restaurant = "data"/> 
+    <stripeC/>
+    <button @click="showNotification">Afficher la notification</button>
     <!-- <footerF/> -->
   </main>
 </template>

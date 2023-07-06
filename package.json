@@ -16,6 +16,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@vue-stripe/vue-stripe": "^4.5.0",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
     "bootstrap-vue": "^2.23.1",
@@ -26,12 +27,15 @@
     "pdfmake": "^0.2.7",
     "pinia": "^2.1.3",
     "sass": "^1.63.4",
+    "stripe": "^12.11.0",
     "sweetalert": "^2.1.2",
     "sweetalert2": "^11.7.12",
     "vue": "^3.3.4",
     "vue-axios": "^3.5.2",
     "vue-router": "^4.2.2",
     "vue-sweetalert2": "^5.0.5",
+    "vue-toastify": "^2.0.0-alpha.1",
+    "vue3-toastify": "^0.1.11",
     "vuetify": "^3.3.4"
   },
   "devDependencies": {

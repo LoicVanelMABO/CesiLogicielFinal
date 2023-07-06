@@ -36,21 +36,22 @@ const router = createRouter({
     {
       path: '/basket',
       name: 'basket',
-      component: basket
+      component: basket,
+      // beforeEnter: requireAuth,
     },
     //pour le dashboard après authentification
     {
       path : '/dashboard',
       name : 'dashboard',
       component : dashboard,
-      beforeEnter: requireAuth,
+      // beforeEnter: requireAuth,
     },
     //liste du menu du restau
     {
       path: '/RestauMenu/:id',
       name: 'RestauMenu',
       component: RestauMenu,
-      beforeEnter: requireAuth
+      // beforeEnter: requireAuth
     },
     
     //Creation de compte utilisateur
@@ -64,21 +65,21 @@ const router = createRouter({
       path: '/sponsoring/:id',
       name: 'Sponsoring',
       component: Sponsoring,
-      beforeEnter: requireAuth,
+      // beforeEnter: requireAuth,
     },
     //vue pour modifier le compte user
     {
       path: '/editAccount/:id',
       name: 'editAccount',
       component: editAccount,
-      beforeEnter: requireAuth,
+      // beforeEnter: requireAuth,
     },
     //gestion des commandes
     {
       path: '/CommandesList',
       name: 'CommandesList',
       component: CmdList,
-      beforeEnter: requireAuth,
+      // beforeEnter: requireAuth,
     },
   ]
 })
